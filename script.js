@@ -1,4 +1,6 @@
 // SAMPLE DATA (PHH)
+
+
 const rationData = [
   {
     mukhiya: 'Radha Devi',
@@ -14,13 +16,7 @@ const rationData = [
     category: 'BPL',
     village: 'Shivnagar',
   },
-  {
-    mukhiya: 'Radha Devi',
-    card: '2143-4092-3987',
-    units: 4,
-    category: 'PHH',
-    village: 'Shivnagar',
-  },
+  
   {
     mukhiya: 'Geeta Sharma',
     card: '2143-XXXX-3990',
@@ -28,20 +24,7 @@ const rationData = [
     category: 'BPL',
     village: 'Shivnagar',
   },
-  {
-    mukhiya: 'Radha Devi',
-    card: '2143-4092-3987',
-    units: 4,
-    category: 'PHH',
-    village: 'Shivnagar',
-  },
-  {
-    mukhiya: 'Geeta Sharma',
-    card: '2143-XXXX-3990',
-    units: 3,
-    category: 'BPL',
-    village: 'Shivnagar',
-  },
+
 ];
 
 // SAMPLE DATA (AAY)
@@ -139,6 +122,8 @@ function searchByName () {
 function downloadCard (cardNo) {
   alert ('Downloading Ration Card: ' + cardNo);
 }
+
+
 
 // INIT
 window.onload = function () {

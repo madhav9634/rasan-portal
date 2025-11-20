@@ -207,7 +207,9 @@ footer {
   white-space: nowrap;
   animation: scroll-left 20s linear infinite;
 }
-
+.download-btn{
+  font-size: 25px;
+}
 @keyframes scroll-left {
   from { transform: translateX(100%); }
   to { transform: translateX(-100%); }
@@ -224,7 +226,9 @@ footer {
   .section-center{
     overflow-x: scroll;
   }
-
+.download-btn{
+  font-size: 20px;
+}
   }
 
 
@@ -283,3 +287,6 @@ footer {
 }
 
 
+/* toggle srt*/
+
+/* toggle end */
