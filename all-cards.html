@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Ration Cards</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <div class="marquee-box">
+      <div class="marquee-text">
+        ⚠️ Important Notice: Ration distribution will follow government guidelines. Check your ration card details carefully.
+      </div>
+    </div>
+
+    <header>
+      <h1>Ration Seva Portal</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="ration-card.html">Ration Card</a>
+        <a href="all-cards.html" class="active">All Cards</a>
+        <a href="price-list.html">Price List</a>
+        <a href="ration-distribution.html">Allotment</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section-center">
+        <h2>Ration Card List PHH</h2>
+
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search by Mukhiya Name (e.g., Radha)"
+          onkeyup="searchByName()"
+        />
+
+        <!-- FIRST TABLE WITH SCROLL WRAPPER -->
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>S.No</th>
+                <th>Mukhiya Name</th>
+                <th>Ration Card No.</th>
+                <th>Units</th>
+                <th>Category</th>
+                <th>Village</th>
+                <th>Download</th>
+              </tr>
+            </thead>
+
+            <tbody id="resultBody">
+              <!-- JS will fill this -->
+            </tbody>
+          </table>
+        </div>
+
+        <h2 style="margin-top:40px;">Rasan Card List AAY</h2>
+
+        <!-- SECOND TABLE WITH SCROLL WRAPPER -->
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>S.No</th>
+                <th>Mukhiya Name</th>
+                <th>Ration Card No.</th>
+                <th>Units</th>
+                <th>Category</th>
+                <th>Village</th>
+                <th>Download</th>
+              </tr>
+            </thead>
+
+            <tbody id="secondTableBody">
+              <!-- JS auto-fill -->
+            </tbody>
+          </table>
+        </div>
+
+      </section>
+    </main>
+
+    <marquee behavior="scroll" direction="left" scrollamount="5" class="marquee">
+      ⚠️ Distribution alert: नई राशन वितरण सूची हर महीने अपडेट होती है | कृपया नियमित जांच करें।
+    </marquee>
+
+    <footer>
+      <p>© 2025 Ration Seva Portal</p>
+    </footer>
+  </body>
+</html>

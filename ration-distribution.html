@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Monthly Allotment</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+  <div class="marquee-box">
+    <div class="marquee-text">
+        ⚠️ Important Notice: Ration distribution will follow government guidelines. Check your ration card details carefully.
+    </div>
+</div>
+
+    <header>
+      <h1>Ration Seva Portal</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="ration-card.html">Ration Card</a>
+        <a href="all-cards.html">All Cards</a>
+        <a href="price-list.html">Price List</a>
+        <a href="ration-distribution.html" class="active">Allotment</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section-center">
+        <h2 id="monthTitle">Ration Allotment</h2>
+
+        <table>
+          <tr>
+            <th>Item</th>
+            <th>Quantity per unit</th>
+          </tr>
+          <tr>
+            <td>Wheat</td>
+            <td>2 kg / member</td>
+          </tr>
+          <tr>
+            <td>Rice</td>
+            <td>3 kg / member</td>
+          </tr>
+          <tr>
+            <td>Sugar</td>
+            <td>3 kg / AAY</td>
+          </tr>
+        </table>
+      </section>
+    </main>
+
+    <marquee
+      behavior="scroll"
+      direction="left"
+      scrollamount="5"
+      class="marquee"
+    >
+      ⚠️ Distribution Notice: अगले वितरण के लिए अपने कार्ड तैयार रखें |
+      दस्तावेज़ सत्यापन आवश्यक हो सकता है।
+    </marquee>
+
+    <footer>
+      <p>© 2025 Ration Seva Portal</p>
+    </footer>
+  </body>
+</html>

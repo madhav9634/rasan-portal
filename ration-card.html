@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Check Ration Card Status</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+  <div class="marquee-box">
+    <div class="marquee-text">
+        ⚠️ Important Notice: Ration distribution will follow government guidelines. Check your ration card details carefully.
+    </div>
+</div>
+
+    <header>
+      <h1>Ration Seva Portal</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="ration-card.html" class="active">Ration Card</a>
+        <a href="all-cards.html">All Cards</a>
+        <a href="price-list.html">Price List</a>
+        <a href="ration-distribution.html">Allotment</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section-center">
+        <h2>Check Your Ration Card Status</h2>
+
+        <form onsubmit="checkStatusForm(event)">
+          <label for="cardNumber">Enter Ration Card Number</label>
+          <input
+            type="text"
+            id="cardNumber"
+            maxlength="14"
+            placeholder="1234-5678-9123"
+            required
+          />
+          <button type="submit">Check Status</button>
+        </form>
+
+        <div
+          id="statusResult"
+          class="section-center"
+          style="margin-top: 15px"
+        ></div>
+      </section>
+    </main>
+
+    <marquee
+      behavior="scroll"
+      direction="left"
+      scrollamount="5"
+      class="marquee"
+    >
+      ⚠️ Reminder: अपने राशन कार्ड की जानकारी समय-समय पर सत्यापित करते रहें |
+      किसी भी समस्या के लिए संपर्क करें।
+    </marquee>
+
+    <footer>
+      <p>© 2025 Ration Seva Portal</p>
+    </footer>
+  </body>
+</html>
